@@ -1,5 +1,6 @@
 # algoritmia
-public class Main {
+
+    public class Main {
     private static void main(String[] a­rgs) {
         int n = 5; // Or any other value you want to test
         int[] dp = new int[n + 1];
@@ -24,10 +25,10 @@ public class Main {
     }
 }
 
-a. Update the code so it uses dynamic programming
-En el codigo actualizado, antes de calcular el valor de dp[n], comprobamos si ya se ha calculado y almacenado en la matriz dp[]. Si es así, devolvemos directamente ese valor, evitando así cálculos redundantes.
-b. Identify where the overlap of the subproblems occurs
-En esta función recursiva, el overlap de subproblemas se produce porque se realizan múltiples llamadas recursivas con el mismo valor n. Por ejemplo, al calcular función(n), la función llama recursivamente a función(n-1), función(n-2) y función(n-3). Esto significa que el mismo subproblema se resuelve varias veces ahi es donde se encuentra el problema.
+    a. Update the code so it uses dynamic programming
+    En el codigo actualizado, antes de calcular el valor de dp[n], comprobamos si ya se ha calculado y almacenado en la matriz dp[]. Si es así, devolvemos directamente ese valor, evitando así cálculos redundantes.
+    b. Identify where the overlap of the subproblems occurs
+    En esta función recursiva, el overlap de subproblemas se produce porque se realizan múltiples llamadas recursivas con el mismo valor n. Por ejemplo, al calcular función(n), la función llama recursivamente a función(n-1), función(n-2) y función(n-3). Esto significa que el mismo subproblema se resuelve varias veces ahi es donde se encuentra el problema.
 
 
 2. Can we say that "all the implementations that use a top-down approach are dynamic programming algorithms”?
